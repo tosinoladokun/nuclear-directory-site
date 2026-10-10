@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuclear Directory</title>
+<meta name="description" content="A free, open directory of the US nuclear industry, with a source for every fact. Coming soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@400;500&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#ffffff; --fg:#0a0a0a; --muted:#5c5c5c; --line:#e3e3e3; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0a0a0a; --fg:#f4f4f4; --muted:#a3a3a3; --line:#262626; } }
+  * { box-sizing: border-box; }
+  html, body { margin:0; background:var(--bg); color:var(--fg); }
+  body { font-family:"Roboto Serif", Georgia, serif; font-size:18px; line-height:1.6; }
+  main { max-width:680px; margin:0 auto; padding:72px 16px 96px; }
+  h1 { font-family:Anton, Impact, sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:.01em;
+       font-size:clamp(44px, 11vw, 88px); line-height:.95; margin:0 0 28px; }
+  h2 { font-family:Anton, Impact, sans-serif; font-weight:400; text-transform:uppercase; font-size:22px;
+       letter-spacing:.03em; margin:0 0 12px; }
+  .lede { font-size:22px; margin:0 0 12px; }
+  .status { font-family:"Roboto Mono", monospace; font-size:13px; text-transform:uppercase; letter-spacing:.08em;
+            color:var(--muted); margin:0 0 56px; }
+  section { border-top:1px solid var(--line); padding-top:28px; margin-top:40px; }
+  p { margin:0 0 14px; }
+  .muted { color:var(--muted); }
+  code { font-family:"Roboto Mono", monospace; font-size:15px; border:1px solid var(--line); padding:1px 6px; }
+  ul { padding-left:20px; margin:0 0 14px; }
+  li { margin:0 0 6px; }
+  a { color:inherit; text-underline-offset:3px; }
+  footer { margin-top:56px; font-family:"Roboto Mono", monospace; font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Nuclear<br>Directory</h1>
+  <p class="lede">A free, open directory of the US nuclear industry: who makes the fuel, who builds the reactors, who runs the power plants, who buys the power and who funds it.</p>
+  <p class="status">Coming soon</p>
+
+  <section>
+    <h2>What it will be</h2>
+    <ul>
+      <li>Every company and power plant links to the public source behind each fact.</li>
+      <li>Free to use. No login, no email sign-up, no ads.</li>
+      <li>Starting with the United States.</li>
+    </ul>
+  </section>
+
+  <section id="bot">
+    <h2>About our crawler</h2>
+    <p>NuclearDirectoryBot collects public information about the nuclear industry from official and company sources. It identifies itself as:</p>
+    <p><code>NuclearDirectoryBot/0.1 (+https://nuclear-directory.org)</code></p>
+    <ul>
+      <li>It follows robots.txt.</li>
+      <li>It visits each source at most once a day and skips pages that haven’t changed.</li>
+      <li>If a site blocks it, it stops. It doesn’t try to get around blocks.</li>
+      <li>It only collects public information, never personal data.</li>
+    </ul>
+    <p>Questions about the crawler, or want it to stay away from your site? Email <a href="mailto:hello@nuclear-directory.org">hello@nuclear-directory.org</a>.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p><a href="mailto:hello@nuclear-directory.org">hello@nuclear-directory.org</a></p>
+  </section>
+
+  <footer>© 2026 Nuclear Directory</footer>
+</main>
+</body>
+</html>
